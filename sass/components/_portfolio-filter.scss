@@ -1,0 +1,56 @@
+// .filters {
+//   padding-top: var(--section-pt);
+//   padding-bottom: var(--section-pb);
+// }
+
+// .filter-nav {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 34px;
+//   transition-property: drop-shadow;
+//   transition-duration: 2500ms;
+//   transition-timing-function: var(--timimg-function);
+// }
+
+// .filter-nav__item {
+//   &:not(:last-child) {
+//     margin-right: 8px;
+//   }
+// }
+
+// .filter-nav__btn {
+//   border-radius: 4px;
+//   border-style: none;
+//   padding: 6px 22px;
+
+//   color: var(--text-color-darkgrey);
+//   background-color: var(--background-color-light);
+
+//   font-family: inherit;
+//   @include font(16px, 500, 1.62);
+//   // font-weight: 500;
+//   // font-size: 16px;
+//   // line-height: 1.62;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   cursor: pointer;
+
+//   transition-property: color, background-color, box-shadow;
+//   transition-duration: 250ms;
+//   transition-timing-function: var(--timimg-function);
+
+//     &:hover,
+//     &:focus {
+//       color: var(--text-color-white);
+//       background-color: var(--accent-color);
+//       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//         0px 2px 2px rgba(0, 0, 0, 0.12);
+//     }
+// }
+
+// .filter-nav__btn--current {
+//   color: var(--text-color-white);
+//   background-color: var(--accent-color);
+//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//     0px 2px 2px rgba(0, 0, 0, 0.12);
+// }

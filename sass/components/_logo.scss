@@ -1,0 +1,25 @@
+.logo {
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  @include font(24px, 700, 1.16);
+  letter-spacing: 0.03em;
+  animation-duration: 1000ms;
+}
+
+// .logo {
+//   margin-right: 93px;
+//   color: var(--accent-color);
+
+//   font-family: var(--secondary-font);
+//   @include font(26px, 700, 1.19);
+//   letter-spacing: 0.03em;
+//   animation-duration: 1000ms;
+// }
+
+.logo--light-theme {
+  color: var(--text-color-black);
+}
+
+.logo--dark-theme {
+  color: var(--text-color-white);
+}
