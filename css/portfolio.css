@@ -109,6 +109,11 @@ button {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header .menu {
+    display: block;
+  }
+}
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -206,12 +211,12 @@ button {
 }
 
 .header {
-  background-color: #ccc;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #ccc;
 }
 
-.contact-list {
+.burger-btn {
   display: none;
 }
 
@@ -233,14 +238,28 @@ button {
   max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
-  transform: translateY(-100%) translateX(-50%);
+  transform: translateY(-150%) translateX(-50%);
   transition: transform 250ms var(--timimg-function);
+  background-color: var(--text-color-white);
 }
 
 .is-open {
   transform: translateY(0) translateX(-50%);
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .contact-list {
+    display: none;
+  }
+}
 .mobile-menu__close-btn {
   position: absolute;
   top: 10px;
@@ -259,7 +278,9 @@ button {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.18;
+  letter-spacing: 0.02em;
   color: var(--text-color-darkgrey);
+  transition: color 250ms var(--timimg-function);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-color);
@@ -281,7 +302,9 @@ button {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
+  letter-spacing: 0.02em;
   color: var(--text-color-grey);
+  transition: color 250ms var(--timimg-function);
 }
 .mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
   color: var(--accent-color);
@@ -308,4 +331,5 @@ button {
   font-weight: 500;
   line-height: 1.22;
   color: var(--accent-color);
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=portfolio.css.map */
