@@ -1,9 +1,38 @@
 .hero {
+  // margin-right: auto;
+  // margin-left: auto;
+  margin: 0 auto;
+  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  min-height: 400px;
+  background-color: var(--background-color-hero);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  & .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-    @media screen and (max-width: 767px) {
-    }
+@media screen and (max-width: 767px) {
+      .hero {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/mobile/header/header-img.jpg');
+      }
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url('../images/mobile/header/header-img@2x.jpg');
+      }
+}
 
 // .hero {
 //   max-width: 1600px;

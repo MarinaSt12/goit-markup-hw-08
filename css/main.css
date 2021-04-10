@@ -11,8 +11,12 @@
   --background-color-dark: #2f303a;
   --background-color-hero: #c4c4c4;
   --background-color-light: #f5f4fa;
-  --section-pt: 94px;
-  --section-pb: 94px;
+  --section-pt-mobile: 60px;
+  --section-pb-mobile: 60px;
+  --section-pt-tablet: 60px;
+  --section-pb-tablet: 60px;
+  --section-pt-desktop: 94px;
+  --section-pb-desktop: 94px;
   --timimg-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -121,12 +125,14 @@ button {
 .hero-title {
   margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 360px;
   font-size: 26px;
   font-weight: 900;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+  color: var(--text-color-white);
 }
 
 @media screen and (min-width: 1200px) {
@@ -134,6 +140,7 @@ button {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 .navigation {
@@ -253,7 +260,6 @@ button {
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #ccc;
 }
 
 .burger-btn {
@@ -374,7 +380,80 @@ button {
   letter-spacing: 0.02em;
 }
 
-.hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+.advantages {
+  display: flex;
+  align-items: center;
+  padding-top: var(--section-pt-mobile);
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  color: var(--text-color-darkgrey);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .advantages__item {
+    margin-bottom: 30px;
+  }
+}
+.advantages__iconbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 120px;
+  background-color: var(--background-color-light);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__iconbox {
+    width: 354px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .advantages__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__iconbox {
+    width: 270px;
+  }
+
+  .advantages {
+    padding-top: var(--section-pt-desktop);
+  }
+
+  .advantages__list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .advantages__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
