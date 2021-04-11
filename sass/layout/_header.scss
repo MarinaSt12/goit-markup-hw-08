@@ -32,16 +32,20 @@
 }
 
 @media screen and (max-width: 767px) {
-    .mobile-menu {
-    display: block;
+  .mobile-menu {
+  display: block;
   }
 
   .burger-btn {
     display: block;
   }
 
-    .contact-list {
-    display: none;
+  .menu {
+  display: none;
+  }
+
+  .contact-list {
+  display: none;
   }
 }
 
