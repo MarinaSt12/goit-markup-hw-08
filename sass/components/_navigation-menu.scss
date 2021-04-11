@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+
 .menu {
   .header & {
     display: none;
@@ -17,11 +23,18 @@
     }
 }
 
-.menu__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .menu {
+//     display: flex;
+
+//   }
+// }
+
+// .menu__item {
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
 .menu__link {
   position: relative;

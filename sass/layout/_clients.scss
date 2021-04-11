@@ -1,6 +1,16 @@
 .clients {
 padding-top: var(--section-pt-mobile);
 padding-bottom: var(--section-pb-mobile);
+
+@media screen and (min-width: 768px) {
+  // & .container {
+  //   width: 768px;
+  // }
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -77,7 +87,6 @@ padding-bottom: var(--section-pb-mobile);
 
 .clients__icon {
   fill: currentColor;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
