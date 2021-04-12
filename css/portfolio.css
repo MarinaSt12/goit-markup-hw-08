@@ -442,24 +442,13 @@ button {
   }
 
   .project-list__item {
+    display: flex;
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--timimg-function);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project-list__item:first-child {
-    display: flex;
-  }
-  .project-list__item:first-child.project-list__link {
-    display: flex;
-    flex-direction: column;
-  }
-  .project-list__item:first-child.project-list__content {
-    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -481,6 +470,8 @@ button {
 }
 .project-list__link {
   display: block;
+  display: flex;
+  flex-direction: column;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
@@ -499,6 +490,7 @@ button {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .project-list__name {
