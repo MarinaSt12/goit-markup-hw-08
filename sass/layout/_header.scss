@@ -2,22 +2,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-// .mobile-menu {
-//   display: block;
-// }
-
-  // .header {
-  // border-bottom: 1px solid #ececec;
-
-  //   .container & {
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: space-between;
-  //   }
-
-  // }
-
-
 .burger-btn {
   display: none;
 }
@@ -47,7 +31,6 @@
   }
 }
 
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -70,15 +53,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  // .header {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
-
-  // .contact-list {
-  //   display: block;
-  // }
-
   .mobile-menu {
     display: none;
   }
@@ -141,7 +115,6 @@ transition: fill 250ms var(--timimg-function);
       color: var(--accent-color);
       @include font(34px, 500, 1.18);
     }
-
 }
 
 .mobile-menu__social-list {

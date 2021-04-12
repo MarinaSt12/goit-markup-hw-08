@@ -13,8 +13,17 @@
 //   }
 // }
 
+@media screen and (max-width: 767px) {
+  .project-list {
+  padding-bottom: var(--section-pb-mobile);
+  }
 
-@media screen and (max-width: 1199px) {
+  .project-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-list {
   padding-bottom: var(--section-pb-mobile);
   }
@@ -30,9 +39,8 @@
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
 
-    @media screen and (min-width: 768px) {
-    margin-left: 30px;
-    }
+  margin-left: 30px;
+    
   }
 }
 
