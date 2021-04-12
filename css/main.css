@@ -724,6 +724,10 @@ button {
   padding-top: var(--section-pt-mobile);
 }
 
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .advantages__title {
   margin-bottom: 10px;
   color: var(--text-color-darkgrey);
@@ -841,10 +845,11 @@ button {
   padding-bottom: var(--section-pb-mobile);
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -915,6 +920,10 @@ button {
     margin-top: -30px;
   }
 
+  .clients__link {
+    width: 210px;
+  }
+
   .clients__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -946,6 +955,10 @@ button {
     justify-content: center;
   }
 
+  .clients__link {
+    width: 170px;
+  }
+
   .clients__item {
     flex-basis: calc(100% / 6 - 60px);
     margin-left: 30px;
@@ -958,7 +971,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -985,6 +997,11 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-wrapper {
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     display: flex;
@@ -1006,11 +1023,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-address {
-    margin-left: 61px;
-  }
 }
 @media screen and (max-width: 1199px) {
   .footer-address {
@@ -1055,12 +1067,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-social {
-    margin-left: 165px;
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-social {
     margin-bottom: 60px;
   }
@@ -1117,11 +1124,6 @@ button {
   .newsletter {
     margin-left: 93px;
     align-items: flex-start;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .newsletter {
-    margin-left: 151px;
   }
 }
 

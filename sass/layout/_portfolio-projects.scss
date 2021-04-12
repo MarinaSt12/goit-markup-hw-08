@@ -1,15 +1,18 @@
 @media screen and (min-width: 768px) {
-  .project-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
+    .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
-.project-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
+// @media screen and (max-width: 767px) {
+//   .project-list__item {
+//   margin-left: 0;
+//   }
+// }
+
 
 @media screen and (max-width: 1199px) {
   .project-list {

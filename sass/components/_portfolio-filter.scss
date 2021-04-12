@@ -6,9 +6,21 @@
     margin-bottom: 25px;
   }
 
-  .filter-nav__item:not(:last-child) {
-    margin-right: 8px;
-    margin-bottom: 15px;
+  .filter-nav__item {
+    margin-left: 15px;
+  }
+
+  .filter-nav__item:nth-last-child(2) {
+    margin-left: 0px;
+  }
+
+  .filter-nav__item:first-child {
+    margin-left: 0px;
+  }
+
+
+  .filter-nav__item:nth-last-child(-n + 2) {
+    margin-top: 8px;
   }
 }
 

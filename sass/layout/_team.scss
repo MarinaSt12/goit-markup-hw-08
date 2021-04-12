@@ -4,9 +4,12 @@
   padding-bottom: var(--section-pb-mobile);
 }
 
-.team__item:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
   margin-bottom: 30px;
+  }
 }
+
 
 @media screen and (min-width: 768px) {
   .team__list {

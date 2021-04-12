@@ -4,6 +4,10 @@
   padding-top: var(--section-pt-mobile);
 }
 
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .advantages__title {
   margin-bottom: 10px;
   color: var(--text-color-darkgrey);

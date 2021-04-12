@@ -21,6 +21,11 @@ padding-bottom: var(--section-pb-mobile);
     margin-top: -30px;
   }
 
+  .clients__link {
+    width: 210px;
+  }
+
+
   .clients__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -54,6 +59,10 @@ padding-bottom: var(--section-pb-mobile);
   justify-content: center;
   }
 
+  .clients__link {
+    width: 170px;
+  }
+
   .clients__item {
     flex-basis: calc(100% / 6 - 60px);
     margin-left: 30px;
@@ -68,7 +77,7 @@ padding-bottom: var(--section-pb-mobile);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
