@@ -4,8 +4,10 @@
   padding-top: var(--section-pt-mobile);
 }
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__title {

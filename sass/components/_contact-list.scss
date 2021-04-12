@@ -1,82 +1,55 @@
-// .contact-list {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-left: auto;
-// }
+.contact-list {
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-list {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 
 .contact-list__link {
-  &--top {
-    padding-top: 32px;
-  }
-
-  &--bottom {
-  padding-bottom: 32px;
-  }
-
-
   color: var(--text-color-grey);
-
   @include font(12px, 500, 1.16);
   letter-spacing: 0.02em;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timimg-function);
-
-
     &:focus,
     &:hover {
       color: var(--accent-color);
     }
 }
 
-    @media screen and (max-width: 1199px) {
-      .contact-list__item:not(:last-child) {
-        margin-bottom: 10px;
-      }
-    }
-
-
-//  @media screen and (max-width: 1199px) {
-//   .contact-list__item:not(:last-child) {
-//     margin-left: 15px;
-//     margin-bottom: 10px;
-//     }
-//   }
-
 .contact-list__icon {
-  fill: var(--text-color-grey);
-  margin-right: 10px;
+fill: var(--text-color-grey);
+margin-right: 10px;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timimg-function);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: var(--timimg-function);
 
-    .contact-list__link:hover &,
-    .contact-list__link:focus & {
-      fill: var(--accent-color);
-    }
+  .contact-list__link:hover &,
+  .contact-list__link:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .contact-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-    }
-
     .contact-list__item {
     &:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
     }
-  }
+    }
+
     .contact-list__link {
       padding-top: 32px;
       padding-bottom: 32px;
       @include font(14px, 500, 1.14);
     }
 }
-
-
