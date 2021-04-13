@@ -77,6 +77,8 @@ button {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header .container {
   display: flex;
@@ -87,7 +89,6 @@ button {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -349,7 +350,6 @@ button {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   transform: translateY(-150%) translateX(-50%);
